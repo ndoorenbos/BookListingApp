@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/search_activity_relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundMain"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    tools:context="com.example.android.booklistingapp.SearchActivity">
+
+    <!-- Loading indicator, only shown before the first load -->
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible"/>
+
+    <!-- TextView for no internet connection -->
+    <TextView
+        android:id="@+id/no_connection_text_view"
+        style="@style/style_user_communication"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/no_internet_connection"
+        android:visibility="gone"/>
+
+    <!-- ListView for the Book Cards -->
+    <ListView
+        android:id="@+id/book_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/colorBackgroundMain"
+        android:dividerHeight="16dp"
+        android:visibility="gone"/>
+
+    <!-- Layout for an empty book list -->
+    <LinearLayout
+        android:id="@+id/no_results_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/no_results_text_view"
+            style="@style/style_user_communication"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/no_data_found"/>
+
+        <TextView
+            android:id="@+id/try_again_text_view"
+            style="@style/style_user_communication"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/try_again"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:id="@+id/try_again_search_button"
+                style="@style/style_search_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:text="@string/search"/>
+
+            <EditText
+                android:id="@+id/try_again_search_box"
+                style="@style/style_search_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/try_again_search_button"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/some_help_text_view"
+            style="@style/style_user_communication"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:text="@string/some_help"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

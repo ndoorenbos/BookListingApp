@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Book Listing App</string>
+    <string name="search_activity_name">Top 20 Results</string>
+
+    <!-- Strings for communicating with the user -->
+    <string name="search">Search</string>
+    <string name="welcome_text">Welcome to my Book Searching App.\n\nThis app takes keywords given
+        by you and searches Google Books for matches.</string>
+    <string name="search_hint">Enter keywords&#8230;</string>
+    <string name="no_data_found">Sorry, we couldn\'t find any books matching the keywords you
+        provided.</string>
+    <string name="try_again">Are there other keywords we can look for?</string>
+    <string name="some_help">Try searching with unique words, such as the name of the author, part
+        of the title, or subject of the book. Other good keywords to use could be names of
+        characters or significant places in the book.</string>
+    <string name="no_title">No Title Found</string>
+    <string name="no_description">No description is given for this book.</string>
+    <string name="no_authors">No Author Listed</string>
+    <string name="no_internet_connection">Sorry, we are unable to establish internet connection at
+        this time.</string>
+</resources>

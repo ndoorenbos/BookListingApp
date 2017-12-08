@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#00E676</color>
+
+    <!-- Background colors -->
+    <color name="colorBackgroundBookCard">#FFF8E1</color>
+    <color name="colorBackgroundMain">#3E2723</color>
+    <color name="colorBackgroundSearchBox">#FFFFFF</color>
+    <color name="colorBackgroundSearchButton">#BCAAA4</color>
+
+    <!-- Text colors -->
+    <color name="colorTextBookCard">#1B5E20</color>
+    <color name="colorTextSearchBox">#1B5E20</color>
+    <color name="colorTextMain">#FFEA00</color>
+    <color name="colorTextSearchButton">#000000</color>
+</resources>

@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- This style is used when we need to communicate something to the user -->
+    <style name="style_user_communication">
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:textColor">@color/colorTextMain</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold|italic</item>
+    </style>
+
+    <!-- This style is used by the EditText boxes the users use to search -->
+    <style name="style_search_box">
+        <item name="android:padding">8dp</item>
+        <item name="android:background">@color/colorBackgroundSearchBox</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:hint">@string/search_hint</item>
+        <item name="android:textColorHint">@color/colorTextSearchBox</item>
+        <item name="android:inputType">text</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- This style is used for the Search Buttons -->
+    <style name="style_search_button">
+        <item name="android:padding">8dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:background">@color/colorBackgroundSearchButton</item>
+        <item name="android:textColor">@color/colorTextSearchButton</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/book_card_linear_layout"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBackgroundBookCard">
+
+    <ImageView
+        android:id="@+id/book_image_view"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="@dimen/min_book_card_height"
+        android:layout_margin="8dp"
+        android:scaleType="fitCenter"
+        tools:src="@mipmap/ic_launcher"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="5"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/min_book_card_height"
+        android:orientation="vertical"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/book_title_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorTextBookCard"
+            android:textSize="16sp"
+            tools:text="Best Book Title Ever"/>
+
+        <TextView
+            android:id="@+id/book_author_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:textStyle="italic"
+            android:textColor="@color/colorTextBookCard"
+            android:textSize="16sp"
+            tools:text="by The Greatest Writer"/>
+
+        <TextView
+            android:id="@+id/book_description_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:textColor="@color/colorTextBookCard"
+            android:textSize="14sp"
+            tools:text="This is the description of the most awesome book in the world!"/>
+
+    </LinearLayout>
+
+</LinearLayout>
